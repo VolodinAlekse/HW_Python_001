@@ -5,12 +5,17 @@
 # Пример: n = 5; элементы 1 2 3 4 5; x = 3; 
 
 
-n = int(input('Введите размер элементов списка: '))
-list_n = input('Введите элементы списка через пробел: ').split()
-arr = list(map(int, list_n))
-x = int (input('Введите число х: '))
-count = 0
-for i in range(n):
-    if arr[i] == x:
-        count += 1
-print(f'Число {x} встречается в списке А {count} раз.')
+
+
+N = abs(int(input('Введите размер элементов списка : ')))
+A_entered = input("Введите элементы списка через пробел : ").split()
+A_num = list(map(int, A_entered))
+if len(A_num) != N:
+    print('Вы ввели не вверное количество чисел, попробуйте еще раз!')
+else:
+    X = int(input('Введите число X: '))
+    count = 0
+    for i in range(N):
+        if A_num[i] == X:
+            count += 1
+    print(f'Число {X} встречается в списке A {count} раз')
