@@ -7,8 +7,8 @@
 
 
 
-A=int(input("Введите число A:"))
-B=int(input("Введите число B:"))
+A = int(input("Введите число A:"))
+B = int(input("Введите число B:"))
 
 def Number(A,B):
      if B == 0:
