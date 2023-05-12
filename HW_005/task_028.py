@@ -10,8 +10,8 @@
 a = int(input("Введите целое неотрицательное число a:"))
 b = int(input("Введите целое неотрицательное число b:"))
 
-def sum(a,b):
-     if b==0:
+def sum(a, b):
+     if b == 0:
           return a
      return 1+sum(a,b-1)
 
