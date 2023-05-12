@@ -15,4 +15,4 @@ def Number(A, B):
           return 1
      return A ** B
 
-print(Number(A,B))
+print(Number(A, B))
